@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 import face_recognition
 
- # provide the path 
+ # provide the path for the directory having database of images
 path = r'D:\#miniproject\images'
 
 # provide url of camera if using external camera
