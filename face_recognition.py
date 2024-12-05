@@ -6,12 +6,7 @@ import os
 from datetime import datetime
 import face_recognition
 
- # provide the path for the directory having database of images
-path = r'D:\#miniproject\images'
-
-# provide url of camera if using external camera
-#url='http://192.168.169.215/cam-hi.jpg'
-##'''cam.bmp / cam-lo.jpg /cam-hi.jpg / cam.mjpeg '''
+path = r'\image'
  
 if 'Attendance.csv' in os.listdir(os.path.join(os.getcwd(),'images')):
     print("there iss..")
