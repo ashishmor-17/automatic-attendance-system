@@ -1,4 +1,4 @@
-# automatic-attendance-system
+# Automatic Attendance System
 Traditionally attendance is marked manually by teachers and they must make sure that 
 correct attendance is marked for respective student. This whole process wastes some of the 
 lecture time and part of the correct information is missed due to fraudulent and proxy cases. 
