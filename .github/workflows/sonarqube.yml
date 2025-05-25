@@ -22,11 +22,6 @@ jobs:
           python-version: 3.10.12
       - name: Install dependencies
         run: |
-          mkdir -p ~/.ssh
-          touch ~/.ssh/config
-          echo "StrictHostKeyChecking no" >> ~/.ssh/config
-          cp certs/jodo_repo.pem ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install tox
@@ -35,5 +30,5 @@ jobs:
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: "sqp_166d8a16684b51b16e7226b3d7e2e1efd37816a1"
+          SONAR_HOST_URL: "http://localhost:9000"
